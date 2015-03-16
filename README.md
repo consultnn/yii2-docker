@@ -14,12 +14,16 @@ Clone this repository.
 git clone http://github.com/sokrat/yii2-docker.git app
 ~~~
 Clone yii 2 application to app directory with name "project"
-Rename example nginx config to mysite.confgit 
-Run
-~~~
-docker-compose up -d
-~~~
+Rename needed example nginx configuration to mysite.conf
+
+USING
+------
 For executing commands inside docker container run
 ~~~
 docker-compose run php {command}
 ~~~
+Start docker containers 
+~~~
+docker-compose up -d
+~~~
+After start check http://127.0.0.1:8090

@@ -5,7 +5,7 @@ nginx:
   volumes:
   - project:/www
   - docker/nginx/log:/var/log/nginx:rw
-  - docker/nginx/mysite.conf:/etc/nginx/conf.d/mysite.conf
+  - docker/nginx/conf.d:/etc/nginx/conf.d
   ports:
   - "8090:80"
 php:
