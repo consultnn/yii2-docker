@@ -1,6 +1,6 @@
 Docker-compose config for Yii 2 Application Template
 ===================================
-Yii 2 docker is a configuration for rapidly compose yii2 infrastructure.
+Yii 2 docker is a configuration for easy deployment of yii2 template application.
 
 REQUIREMENTS
 ------------
