@@ -13,7 +13,12 @@ Clone this repository.
 ~~~
 git clone http://github.com/sokrat/yii2-docker.git app
 ~~~
-Clone yii 2 application to app directory with name "project"
+Clone yii 2 application
+~~~
+git clone https://github.com/yiisoft/yii2-app-advanced.git app/project
+or
+git clone https://github.com/yiisoft/yii2-app-basic.git app/project
+~~~
 Rename needed example nginx configuration to mysite.conf
 
 USING
