@@ -19,7 +19,7 @@ git clone https://github.com/yiisoft/yii2-app-advanced.git app/project
 or
 git clone https://github.com/yiisoft/yii2-app-basic.git app/project
 ~~~
-Rename needed example nginx configuration to mysite.conf
+Remove ".example" from nginx configuration example filename (docker/nginx/conf.d)
 
 USING
 ------
