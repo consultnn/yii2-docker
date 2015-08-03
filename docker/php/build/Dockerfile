@@ -1,4 +1,4 @@
-FROM php:5.5-fpm
+FROM php:5.6-fpm
 # Install modules
 RUN apt-get update && apt-get install -y zlibc zlib1g zlib1g-dev --no-install-recommends && rm -r /var/lib/apt/lists/*
 RUN docker-php-ext-configure mbstring

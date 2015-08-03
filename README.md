@@ -9,15 +9,20 @@ Docker and Docker compose
 
 INSTALLATION
 ------------
-Clone this repository. 
+Clone this repository and remove git files 
 ~~~
-git clone http://github.com/sokrat/yii2-docker.git app
+git clone http://github.com/consultnn/yii2-docker.git {your_app_name} && rm -rf {your_app_name}/.git
 ~~~
-Clone yii 2 application.
+Change directory
 ~~~
-git clone https://github.com/yiisoft/yii2-app-advanced.git app/project
+cd {your_app_name}
+~~~
+
+Install yii 2 application.
+~~~
+docker-compose run --rm php composer create-project --prefer-dist yiisoft/yii2-app-advanced yii-application
 or
-git clone https://github.com/yiisoft/yii2-app-basic.git app/project
+docker-compose run --rm composer create-project --prefer-dist yiisoft/yii2-app-basic basict
 ~~~
 Remove ".example" from nginx configuration example filename (docker/nginx/conf.d).
 
@@ -25,12 +30,14 @@ USING
 ------
 For executing commands inside docker container run
 ~~~
-docker-compose run {service} {command}
+docker-compose run --rm {service} {command}
+or, if application already running
+docker exec {service} {command}
 ~~~
 For example:
 ~~~
 docker-compose run php composer install
-docker-compose run php /www/init
+docker exec run php /init
 ~~~
 
 Start docker containers
